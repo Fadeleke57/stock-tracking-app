@@ -1,0 +1,29 @@
+{
+  "name": "ride-desi-main",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "20.4.2",
+    "@types/react": "18.2.15",
+    "@types/react-dom": "18.2.7",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.10",
+    "framer-motion": "^10.13.1",
+    "next": "^13.4.12",
+    "next-cloudinary": "^4.15.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-intersection-observer": "^9.5.2",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "video.js": "^8.3.0"
+  }
+}

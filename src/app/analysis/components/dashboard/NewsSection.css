@@ -1,0 +1,147 @@
+.activties {
+  position: relative;
+}
+
+.activities-header {
+    margin: 2.7em 0 1.5em 0;
+  }
+
+.news-slide {
+  height: 114vh; 
+  overflow-y: auto;
+  padding: 0 .5em;
+}
+
+.time-stamp {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+}
+
+@media screen and (max-width: 900px) {
+  .news-slide {
+    height: fit-content; 
+  }
+}
+  
+.post {
+    margin: 1em 0;
+    border-radius: 0.8em;
+    background-color: rgb(241, 239, 239);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    min-height: 15em;
+    position: relative;
+}
+
+.post p {
+  line-height: 1.2em;
+  color: black;
+}
+
+.post > div,
+.activities-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+}
+  
+.post .post-header {
+    justify-content: flex-start;
+}
+
+.post a {
+  transition: 0.3s;
+  color: rgb(0, 0, 0);
+}
+
+.post a:hover {
+  justify-content: flex-start;
+  color: var(--accent);
+}
+  
+.user-image {
+    width: 3em;
+    border-radius: 50%;
+    margin-right: 0.8em;
+}
+  
+.post-body {
+    margin: .7em 0 0 0;
+}
+  
+.photo {
+    width: 3em;
+    border-radius: 0.5em;
+}
+  
+.post button {
+    background: var(--secondary);
+    color: var(--accent);
+    width: 2.3em;
+    height: 2.3em;
+    border: none;
+    font-size: 1.1em;
+    border-radius: 0.5em;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-right: 1em;
+}
+  
+.post button:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+.more-button {
+  position: absolute;
+  padding: .5em;
+  bottom: 2em;
+  right: 2em;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: .5s;
+  background-color: var(--accent);
+  color: white;
+}
+
+.more-button:hover {
+  color: black;
+  background-color: white;
+}
+  
+  @media screen and (max-width: 1330px) {
+    .dash {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+  @media screen and (max-width: 900px) {
+    .dashboard {
+      grid-template-columns: 6em auto;
+    }
+    .overview, .user-info, .gallery {
+      grid-template-columns: 1fr;
+    }
+    .profile-card, .chart-container {
+      grid-column: 1 / span 1;
+      min-height: 20em;
+    }
+    .chart-container #lineChart {
+      width: 100% !important;
+    }
+    .more-button {
+      bottom: -2em;
+      left: 2em;
+    }
+
+  }
+  
+  
+  @media screen and (max-width: 750px) {
+    html {
+      font-size: 14px;
+    }
+
+  }

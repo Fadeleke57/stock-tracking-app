@@ -1,0 +1,91 @@
+.btn {
+    font-size: 1.1em;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8em 1.5em;
+    border-radius: 3em;
+    background: #000000;
+    color: #000;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .btn-secondary {
+    border: 3px #fff solid;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, .3);
+    color: #fff;
+  }
+
+  .start-button {
+    font-size: 1.1em;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8em 1.5em;
+    margin-left: 11em;
+    border-radius: 3em;
+    background: #000000;
+    color: #000;
+    transition: 0.3s;
+  }
+
+@media screen and (max-width: 900px){
+  .start-button {
+    margin-left: 0em;
+  }
+
+.btn {
+    font-size: 1.1em;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8em 1.5em;
+    border-radius: 3em;
+    background: #000000;
+    color: #000;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .btn-secondary {
+    border: 3px #fff solid;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, .3);
+    color: #fff;
+  }
+
+  .start-button {
+    font-size: 1.1em;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8em 1.5em;
+    margin-left: 11em;
+    border-radius: 3em;
+    background: #000000;
+    color: #000;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .start-button {
+    margin-left: 0em;
+  }
+}

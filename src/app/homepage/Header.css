@@ -1,0 +1,123 @@
+header {
+  background-image: "./img/bonsai_background.jpg";
+  background-size: cover;
+  min-height: 100vh;
+  padding: 3em 2em 1em 2em;
+  display: flex;
+}
+
+.row {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+
+}
+
+.col {
+  flex-grow: 1;
+  z-index: 3;
+}
+
+.waviy {
+  position: relative;
+}
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 6em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+  animation-delay: calc(.2s * var(--i));
+  color: #fff;
+}
+.gradient {
+  position: relative;
+}
+
+.gradient span {
+  position: relative;
+  display: inline-block;
+  font-size: 9em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+  animation: flip 4s infinite;
+  animation-delay: calc(.2s * var(--i));
+  color: #fff;
+  background-color: #ffffff;
+  background-image: linear-gradient(45deg, #ffffff, #959595);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.header-subtitle {
+  text-align: center;
+  color: white;
+}
+
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg);
+  }
+}
+
+.btn-tertiary {
+  background: linear-gradient(to left top, rgb(167, 167, 167), #486850);
+  color: #fff;
+  cursor: pointer;
+  border: 3px #ffffff solid;
+}
+
+.btn-tertiary:hover {
+  border: 3px #ffffff solid;
+  background: rgba(255, 255, 255, .3);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.col h1 span {
+  background-color: #ffffff;
+  background-image: linear-gradient(45deg, #ffffff, #959595);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.header-arrows {
+  color: #fff;
+  position: absolute;
+  left: 49.1%;
+  top: 93%;
+}
+
+
+@media screen and (max-width: 900px) {
+  header h1 {
+    font-size: 1.7em;
+  }
+  .waviy span {
+  font-size: 5em;
+  }
+  .gradient span {
+    font-size: 7em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .waviy span {
+    font-size: 3.8em;
+  }
+  .gradient span {
+    font-size: 4.2em;
+  }
+}
