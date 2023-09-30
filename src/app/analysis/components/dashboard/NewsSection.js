@@ -3,7 +3,7 @@
 
 import './NewsSection.css'
 import Link from 'next/link'
-import NewsSlide from './newsSlide';
+import NewsSlide from './NewsSlide';
 import {useState, useEffect} from 'react';
 
 export default function NewsSection({stock, setLimit, limit}) {
