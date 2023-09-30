@@ -19,11 +19,11 @@ function Card2() {
       <h1>
       <FontAwesomeIcon icon={faSeedling} />
       <br/>
-      Hone Your Craft 
+      Hone Your Craft
       </h1>
     </FadeUp>  
     <FadeUp>
-      <p>Experience Shouldn't Limit Your Success</p>
+      <p>Experience Shouldn&apos;t Limit Your Success</p>
     </FadeUp>
     </div>
 

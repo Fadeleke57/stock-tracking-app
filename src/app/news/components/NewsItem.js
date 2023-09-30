@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 function NewsItem({item}) {
     const websiteUrl = item.url
     const website = websiteUrl.split('https://').pop().split('/')[0]
