@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 const VideoPlayer = () => {
   return (
     <video muted autoplay>
-      <source src="/bonsai_landingvidOldWstrnFitted.mp4" type="video/mp4" />
+      <source src="public/bonsai_landingvidOldWstrnFitted.mp4" type="video/mp4" />
       {/* Add more <source> tags for other video formats if needed */}
       Your browser does not support the video tag.
     </video>
