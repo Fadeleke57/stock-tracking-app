@@ -1,7 +1,7 @@
 // components/VideoPlayer.js
 import React from 'react';
 import dynamic from "next/dynamic";
-import LandingVid from "../../public/bonsai_landingvidOldWstrnFitted.mp4"
+import LandingVid from "../../../public/bonsai_landingvidOldWstrnFitted.mp4"
 
 const VideoPlayer = () => {
   return (
