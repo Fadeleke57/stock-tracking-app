@@ -1,0 +1,144 @@
+.navbar {
+    background: transparent;
+    width: 100%;
+    padding: 0;
+    color: black;
+    transition: 0.5s ease-in-out;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: -0.05em;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .navbar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    font-weight: 600;
+  }
+
+  .navbar a:hover {
+    color: #b2b2b2;
+  }
+  
+  .brand {
+    margin-right: 4em;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2em;
+    transition: 0.5s ease-in-out;
+    height: 100%;
+    z-index: 70;
+  }
+
+  .menu-logo {
+    width: 11em;
+    display: none;
+    height: auto;
+  }
+
+  .navbar-img {
+    transition: 0.5s ease-in-out;
+    width: 90px;
+    height: 90px;
+  }
+  
+  .menu-btn {
+    cursor: pointer;
+    font-size: 1.3em;
+    display: none;
+    transition: 0.3s;
+  }
+  
+  .menu-btn:hover {
+    color: #000000;
+  }
+  
+  .navbar-active {
+    position: fixed;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-active .navbar-img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  @media screen and (max-width: 800px) {
+
+    .menu-btn {
+      display: block; 
+    }
+
+    .menu-logo {
+      display: flex;
+    }
+
+    .menu {
+      position: absolute;
+      top: -75em;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgb(243, 248, 243);
+      flex-direction: column;
+      justify-content: flex-start;
+      overflow-y: hidden;
+      z-index: 70;
+      padding: 8em 0;
+    }
+
+
+    /*Dynamic class added 
+    later with Javascript*/
+    .navbar .menu-open {
+      left: 0;
+      font-size: 1.2em;
+      gap: 2em;
+      font-weight: 500;
+      top: 4.1em;
+      z-index: 70;
+    }
+
+    .navbar {
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+      position: fixed;
+    }
+
+    .navbar-img {
+      width: 75px;
+      height: 75px;
+    }
+
+    .navbar-active .navbar-img {
+      width: 75px;
+      height: 75px;
+    }
+
+    .menu a {
+      width: 100%;
+    }
+
+    .brand {
+      margin-right: 14em;
+    }
+
+  }
+
+
+

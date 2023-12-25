@@ -1,0 +1,107 @@
+footer h1 {
+    color: #fff;
+    text-align: center;
+    margin: 3em 0;
+    font-size: 3em;
+  }
+    
+    /*Footer styles start here*/
+  footer * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+    
+  footer ul {
+    list-style: none;
+  }
+    
+  footer {
+    color: #fff;
+    background: rgb(0, 0, 0);
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+    
+  footer p {
+    color: #ccc; 
+    max-width: 25em;
+    font-size: 0.9em;
+    line-height: 23px;
+  }
+    
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+    
+  footer h4 {
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+    
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+  }
+    
+  .footer-brand {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+    
+  .footer-bottom {
+    border-top: 1px #dbdbdb solid;
+  }
+  
+  .footer-menu li {
+    display: inline-block;
+    margin: 0.7em 1em 0.7em 0;
+    text-align: center; 
+  }
+  
+  .footer-menu a  {
+    transition: 0.3s;
+    font-weight: 600;
+  }
+  
+  .footer-menu a:hover {
+    color: #667e67;
+  }
+  
+  .footer4 {
+    text-align: center;
+  }
+  
+  .footer4 p {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .linkedIn-footer {
+    width: 2em;
+    height: 2em;
+  }
+
+  @media screen and (max-width: 800px) {
+    .footer-menu li {
+      display: inline-block;
+      margin: 0.5em 1em 1em 0;
+      text-align: center; 
+    }
+
+    .footer-menu a {
+      font-size: .9em;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+
+    .footer-menu a {
+      font-size: .8em;
+    }
+  }

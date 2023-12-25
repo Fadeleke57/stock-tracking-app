@@ -1,0 +1,140 @@
+.btn {
+    font-size: 1.1em;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8em 1.5em;
+    border-radius: 3em;
+    background: #000000;
+    color: #000;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .btn-secondary {
+    background: white;
+    padding: 0.8em 1.5em;
+    font-size: 1.1em;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    border-radius: 0.9em;
+  }
+  
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, .3);
+    color: #fff;
+  }
+
+  .start-button {
+    font-size: 1.1em;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8em 1.5em;
+    margin-left: 11em;
+    border-radius: 0.9em;
+    background: #3A4F39;
+    color: #ffffff;
+    transition: 0.3s;
+  }
+
+  .btn-tertiary {
+    font-size: 1.1em;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8em 1.5em;
+    border-radius: 0.7em;
+    background: #3A4F39;
+    color: #ffffff;
+    transition: 0.3s;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-tertiary:hover {
+    background-color: #426d40;
+  }
+
+  .btn-quaternary {
+    font-size: 1.1em;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8em 1.5em;
+    border-radius: 0.7em;
+    background: #739271;
+    color: #ffffff;
+    transition: 0.3s;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-quaternary:hover {
+    background-color: #3A4F39 ;
+  }
+
+@media screen and (max-width: 900px){
+  .start-button {
+    margin-left: 0em;
+  }
+
+.btn {
+    font-size: 1.1em;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8em 1.5em;
+    border-radius: 3em;
+    background: #000000;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .btn-secondary {
+    border: 3px #fff solid;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, .3);
+    color: #fff;
+  }
+
+  .start-button {
+    font-size: 1.1em;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8em 1.5em;
+    margin-left: 11em;
+    border-radius: 3em;
+    background: #000000;
+    color: white;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .start-button {
+    margin-left: 0em;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .start-button {
+    padding: 0.8em 4em;
+    border-radius: .5em;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .btn-quaternary {
+    padding: 0.8em 1.1em;
+  }
+}

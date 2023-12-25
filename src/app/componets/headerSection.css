@@ -1,0 +1,159 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 1em;
+    position: relative;
+}
+
+.header-gsap-animation {
+    position: relative; /* Ensure relative positioning for the parent */
+    overflow: hidden; /* Optional: to prevent overflow of the parallax background */
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensures the image stays behind the content */
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/pawprint2edited.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.header-text-div {
+    padding-left: 1em;
+    width: 100%;
+}
+
+.header-text-div p {
+    text-align: left;
+    font-size: 25px;
+    line-height: 2em;
+    color: #3A4F39;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header-content-div {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    padding-left: 4em;
+}
+
+.header-logo-div {
+    padding-top: 2em;
+    margin-bottom: -20px;
+
+}
+
+.cattrail-image {
+    height: 15em;
+    width: 35em;
+}
+
+.header-button-div {
+    padding-left: 1em;
+}
+
+
+.header-arrow-div {
+    position: absolute;
+    width: 6em;
+    height: 6em;
+    left: 47.5%;
+    bottom: -3em;
+    border-radius: 100%;
+    background-color: #EBEDEB;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.header-arrow-icon {
+    height: 1.5em;
+    color: #3A4F39;
+}
+
+@media screen and (max-width: 700px){
+    .header {
+        align-items: center;
+        justify-content: center;
+        padding: 0em;
+    }
+
+    .header-text-div p {
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 1em;
+        width: 85%;
+    }
+
+    .header-content-div {
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        padding-left: 0em;
+        margin-bottom: 17em;
+    }
+
+    .cattrail-image {
+        width: 23em;
+    }
+    .header-button-div {
+        padding-left: 0em;
+    }
+    .header-logo-div {
+        margin-bottom: -3em;
+    }
+    .header-text-div {
+        padding-left: 0em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-arrow-div {
+        position: absolute;
+        width: 6em;
+        height: 6em;
+        left: 40vw;
+        bottom: -3em;
+        border-radius: 100%;
+        background-color: #EBEDEB;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cattrail-image {
+        height: 15em;
+        width: 18em;
+    }
+    .header-content-div {
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        padding-left: 0em;
+        margin-bottom: 12em;
+    }
+    .header-logo-div {
+        padding-top: 2em;
+        margin-bottom: -5em;
+    }
+    .header-text-div p {
+        font-size: 1em;
+    }
+}

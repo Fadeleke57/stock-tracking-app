@@ -1,0 +1,89 @@
+.card3 {
+    display: flex;
+    min-height: 100vh;
+    background-color: rgba(60, 79, 59, 0.10);
+    position: relative;
+    padding: 6em 6em;
+}
+
+.card3-content {
+    display: flex;
+}
+
+.card3-history h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(60, 79, 59);
+}
+
+.card3-history h2 {
+    max-width: 70%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(60, 79, 59);
+}
+
+.card3-history {
+    width: 50%;
+}
+
+.card3-history p {
+    line-height: 1.6em;
+}
+
+.card3-history-graphic {
+    position: absolute;
+    width: 45%;
+    flex-basis: 75%;
+    height: 125%;
+    bottom: -15em;
+    right: 2em; 
+}
+
+.card3-history-graphic-mobile {
+    display: none;
+    width: 100%;
+    border-radius: 1.5em;
+}
+
+.card3-history-graphic-mobile:hover {
+    opacity: 80%;
+}
+
+small {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+    .card3-content {
+        flex-direction: column;
+        gap: 3em;
+    }
+    .card3-history-graphic {
+        display: none;
+    }
+    .card3-history {
+        width: 100%;
+    }
+    .card3 {
+        padding: 6em 2em 3em;
+    }
+    .card3-history-graphic-mobile {
+        display: flex;
+        width: 100%;
+    }
+    .card3-history h2 {
+        max-width: 80%;
+    }
+    .card3-history h1 {
+        font-size: 2.5em;;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card3-history-graphic-mobile {
+        height: 15em;
+    }
+}
+

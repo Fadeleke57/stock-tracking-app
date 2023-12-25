@@ -1,0 +1,86 @@
+.card4 {
+    min-height: 100vh;
+}
+
+.card4-contact-div {
+    border-bottom-right-radius: 5em;
+    border-top-left-radius: 5em;
+    background-color: #D9D9D9;
+    background-color: rgba(60, 79, 59, 0.10);
+    width: 100%;
+    padding: 4em;
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    position: relative;
+    box-shadow: 0 5px 5px 0 rgba(60, 79, 59, 0.3);
+}
+
+.card4-contact-inputs {
+    width: 100%;
+}
+
+.card4-contact-inputs h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.3em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.card4-contact-information {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.card4 h1, .card4 h2, .card4 h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card4-contact-information h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.3em;
+}
+
+.card4-contact-information h3 {
+    font-size: 1.4em;
+    margin-bottom: 0.3em;
+}
+
+.card4 p {
+    font-size: 1.1em;
+}
+
+.linkedIn-icon {
+    position: absolute;
+    bottom: 4em;
+    right: 4em;
+    width: 3em;
+    height: 3em;
+}
+
+.contact-icon {
+    margin-left: 0.8em;
+}
+
+@media screen and (max-width: 1200px) {
+    .card4-contact-div {
+        flex-direction: column;
+        border-bottom-right-radius: 43em;
+        border-top-left-radius: 48em;
+        box-shadow: none;
+    }
+    .card4 {
+        padding: 2em 0em;
+    }
+    .card4-contact-information h1 {
+        font-size: 1.6em;
+    }
+    .card4-contact-div {
+        padding: 4em 2em;
+        background-color: rgba(60, 79, 59, 0.10);
+    }
+    .card4-contact-information h3 {
+        font-size: 1.2em;
+    }
+}

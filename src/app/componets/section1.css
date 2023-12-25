@@ -1,0 +1,171 @@
+.card1 {
+    background-color: rgba(60, 79, 59, 0.10);
+    display: flex;
+    align-items: center;
+    gap: 5em;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 6em;
+}
+
+.card1 {
+    text-align: center;
+}
+
+.card1-introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    width: 100%;
+    flex-direction: row;
+}
+
+.card1-introduction h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(60, 79, 59);
+}
+
+.venn-diagram {
+    height: 30em;
+}
+
+.card1-header-div {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    max-width: 40%;
+}
+
+.card1-information {
+    display: flex; /* changed from grid to flex */
+    width: 100%;
+    gap: 1em; /* maintain a gap between child divs */
+}
+
+.card1-information div {
+    flex: 0 0 auto; /* flex-grow, flex-shrink, flex-basis */
+    width: 27em; /* fixed width for each child div */
+    background-color: white;
+    text-align: center;
+    padding: 3em;
+    box-shadow: 0 5px 5px 0 rgba(60, 79, 59, 0.3);
+    border-radius: 0.7em;
+    width: 27em;
+}
+
+.card1-information h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.card1-information p {
+    line-height: 1.4em;
+}
+
+.box-icon {
+    margin-bottom: .5em;
+    font-size: 2em;
+}
+
+.line1 {
+    position: absolute;
+    left: 17.6%;
+    top: 4em;
+    width: 30%;
+    height: 10px;
+}
+
+.line2 {
+    position: absolute;
+    right: 17.6%;
+    top: 4em;
+    width: 30%;
+    height: 10px;
+}
+
+.show-more {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+small {
+    font-weight: 600;
+}
+
+.card1-header-div-container {
+    max-width: 60%;
+}
+
+@media screen and (max-width: 1300px) {
+    .line1, .line2 {
+        display: none;
+    }
+    .card1-information {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card1-information div {
+        width: 40em; /* fixed width for each child div */
+    }
+    .venn-diagram {
+        height: 20em;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .card1-introduction {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3em;
+        width: 100%;
+        flex-direction: column;
+    }
+    .venn-diagram {
+        height: 20em;
+        width: 100%;
+    }
+    .card1-header-div {
+        max-width: 90%;
+    }
+    .card1-introduction h1 {
+        font-size: 3em;
+    }
+
+    .card1-information {
+        display: flex; /* Align children inline */
+        flex-direction: column;
+        gap: 1em; /* Maintain a gap between child divs */
+    }
+
+    .card1-information div {
+        flex: 0 0 auto; /* Do not grow, do not shrink, auto-basis */
+        width: 90%; /* Adjust the width as necessary */
+        padding: 2em;
+    }
+
+    .card1-information div {
+        display: inline-block;
+    }
+
+    .line1, .line2 {
+        display: none;
+    }
+    .card1 {
+
+    }
+}
+

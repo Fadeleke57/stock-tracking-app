@@ -1,0 +1,70 @@
+.back-to-top-button {
+    position: fixed;
+    bottom: 2%;
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translateX(-50%);
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    line-height: 150%;
+    background: #3A4F39;
+    color: whitesmoke;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+    opacity: 0.9;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 20;
+  }
+  
+  .back-to-top-button.visible {
+    display: block;
+    animation-name: back-to-top-show;
+  }
+
+  .back-to-top-button.hidden {
+    bottom: -20%;
+  }
+
+  .back-to-top-button.hide {
+    animation-name: back-to-top-hide;
+  }
+  
+  .back-to-top-button:hover {
+    background-color: #30422f;
+    opacity: 0.95 !important;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-delay: 0s !important;
+      animation-duration: 0s !important;
+      animation-timing-function: linear !important;
+      animation-fill-mode: forwards !important;
+      transition: none !important;
+    }
+  }
+  
+  @keyframes back-to-top-show {
+    from {
+      opacity: 0;
+      bottom: -20%;
+    }
+    to {
+      opacity: 0.9;
+      bottom: 2%;
+    }
+  }
+  @keyframes back-to-top-hide {
+    from {
+      opacity: 0.9;
+      bottom: 2%;
+    }
+    to {
+      opacity: 0;
+      bottom: -20%;
+    }
+  }

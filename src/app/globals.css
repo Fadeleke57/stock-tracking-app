@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    padding: 0;
+  }
+    
+  body {
+    background: #ffffff;
+    font-family: sans-serif;
+    padding: 0;
+    overflow-x: hidden;
+  }
+    
+  header {
+    min-height: 100vh;
+
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  section {
+    padding: 7em;
+    display: flex;
+  }
+
+  p {
+    color: black;
+  }
+
+  @media screen and (max-width: 700px) {
+    header {
+      background-image: url("./componets/images/pawprint2edited2Mobile.jpg");
+    }
+    section {
+      padding: 7em 0em 6em 0em;
+      display: flex;
+      
+    }
+  }

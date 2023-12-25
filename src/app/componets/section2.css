@@ -1,0 +1,430 @@
+.card2 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
+.card2-header {
+   padding: 6em 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.card2-header-content {
+    width: 70%;
+}
+
+.card2-header h3 {
+    font-size: 2.1em;
+    color: rgb(60, 79, 59);
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.card2-header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(60, 79, 59);
+    max-width: 90%;
+}
+
+.card2-header a {
+    margin: 0.5em 0.4em 0.5em 0;
+    text-align: center;
+}
+
+.card2-header-buttons {
+    margin-top: 2em;
+}
+  
+.accordion {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    gap: 1.5em;
+    background: white;
+}
+
+.accordion-item {
+    background-color: rgba(0,0,0,0.2);
+    width: 10em;
+    height: 40em;
+    border-radius: 3em;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 1em rgba(113, 135, 112, 0.6);
+    border-bottom: 2px transparent solid;
+    cursor: pointer;
+    transition: 200ms cubic-bezier(.91,.36,.84,.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion-item {
+    --accent: #cacaca;
+    --gradient: #173921; 
+}
+
+.accordion-item::before {
+    content: "";
+    background-color: #E7E7E7;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: 200ms;
+}
+
+.accordion-item:hover {
+    border-bottom: 2px var(--accent) solid;
+}
+
+/*On hover, add below styles to all 
+accordion item before elements, except 
+the accordion item with the active class*/
+.accordion-item:not(.item-active):hover:before {
+    opacity: 1;
+    height: 50%;
+}
+
+.accordion-item-pfp {
+    position: absolute;
+    top: 6em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8em;
+    height: 8em;
+    object-fit: cover;
+    z-index: 2;
+    transition: width 300ms;
+    transition-delay: 200ms;
+    filter: brightness(0.9);
+    border-radius: 100%;
+}
+
+
+.accordion-item-title h2 {
+    font-size: 2.1em;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.accordion-item-title h3 {
+    font-size: 1.3em;
+    color: black;
+}
+
+/*On hover, add below styles to all 
+accordion item images, except 
+the accordion item with the active class*/
+.accordion-item:hover:not(.item-active) .accordion-item-pfp,
+.item-active .accordion-item-pfp {
+    filter: brightness(1.25);
+}
+
+.accordion-item > div {
+    position: absolute;
+    left: 8em;
+    bottom: 2em;
+    width: 90%;
+    max-width: calc(100% - 4em);
+    color: #fff;
+    transition: none;
+    opacity: 0;
+    z-index: 1;
+}
+
+.accordion-item h2 {
+    margin-bottom: 0.2em;
+}
+
+.accordion-item-information {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+
+.accordion-item p {
+    font-size: 0.91em;
+    font-weight: 500;
+    color: black;
+}
+
+.item-active {
+    background-color: #E7E7E7;
+    width: 32em;
+    border-bottom: 2px var(--accent) solid;
+    cursor: auto;
+}
+
+.item-active > div {
+    left: 2em;
+    transition: 200ms;
+    transition-delay: 200ms;
+    opacity: 1;
+}
+
+.item-active .accordion-item-pfp {
+    top: 6em;
+    left: 6em;
+}
+
+.item-active .accordion-item-title {
+    position: absolute;
+    left: 12em;
+    top: 2.7em;
+}
+
+.item-active::before {
+    opacity: 1;
+}
+
+.accordion-linkedIn-icon {
+    width: 2em;
+    height: 2em;
+    z-index: 5;
+}
+
+.accordion-linkedin-button {
+    background: none;      
+    border: none;         
+    padding: 0;             
+    cursor: pointer;        
+    display: inline-flex;   
+    align-items: center;    
+    justify-content: center;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .card2-header-buttons {
+        margin-top: 1em;
+        width: 100%;
+    }
+
+    .accordion {
+        flex-direction: column;
+    }
+
+    .card2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em 1em 5em 1em;
+    }
+
+    .accordion-item {
+        width: 40em;
+        height: 12em;
+    }
+    .item-active {
+        height: 35em;
+    }
+
+    .card2-header {
+        padding: 4em 0 0 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .card2-header a {
+        margin: 0.5em 0 1em 0;
+   
+    }
+    
+    .card2-header-content {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+    
+    .card2-header h3 {
+        font-size: 1.5em;
+        color: rgb(60, 79, 59);
+        font-weight: 700;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    
+    .card2-header h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(60, 79, 59);
+        max-width: 100%;
+    }
+    
+    .card2-header-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4em;
+        width: 100%;
+    }
+
+    .item-active .accordion-item-pfp {
+        top: 5em;
+        left: 5em;
+    }
+
+    .item-active .accordion-item-title {
+        position: absolute;
+        left: 11em;
+        top: 2.60em;
+        width: 12em;
+        height: 5em;
+    }
+
+    .accordion-item-pfp {
+        position: absolute;
+        top: 6em;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 8em;
+        height: 8em;
+        object-fit: cover;
+        z-index: 2;
+        transition: width 300ms;
+        transition-delay: 200ms;
+        filter: brightness(0.9);
+        border-radius: 100%;
+    }
+    .accordion-item-title h2 {
+        font-size: 1.6em;
+        color: black;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    .accordion-item-title h3 {
+        font-size: 1em;
+        color: black;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .accordion-item {
+        width: 23em;
+    }
+    .item-active {
+        height: 53em;
+    }
+    .accordion-item-information {
+        top: 20%;
+    }
+    .item-active .accordion-item-title {
+        position: absolute;
+        left: 9.8em;
+        top: 2.5em;
+        width: 14em;
+        height: 5em;
+    }
+    .accordion-item-title h2 {
+        font-size: 1.45em;
+        color: black;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+    .accordion .accordion-item:nth-child(3).item-active {
+        height: 42em;
+    }
+
+    .accordion .accordion-item:nth-child(3).item-active .accordion-item-information {
+        top: 26%;
+    }
+
+    .accordion .accordion-item:nth-child(2).item-active {
+        height: 36em;
+    }
+
+    .accordion .accordion-item:nth-child(2).item-active .accordion-item-information {
+        top: 30%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .accordion-item {
+        width: 20em;
+    }
+
+    .accordion-item-information {
+        top: 19%;
+    }
+
+    .item-active {
+        height: 57em;
+    }
+    .card2-header a {
+    
+    }
+    .item-active .accordion-item-title {
+        position: absolute;
+        left: 9.5em;
+        top: 1.7em;
+        width: 10em;
+        height: 5em;
+    }
+    .accordion-item p {
+
+    }
+    .item-active .accordion-item-pfp {
+        width: 7em;
+        height: 7em;
+        left: 5em;
+    }
+    .accordion-item-title h2 {
+        font-size: 1.4em;
+        color: black;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    .accordion .accordion-item:nth-child(3).item-active {
+        height: 48em;
+    }
+
+    .accordion .accordion-item:nth-child(3).item-active .accordion-item-information {
+        top: 22%;
+    }
+
+    .accordion .accordion-item:nth-child(2).item-active {
+        height: 40em;
+    }
+
+    .accordion .accordion-item:nth-child(2).item-active .accordion-item-information {
+        top: 26%;
+    }
+
+    .accordion .accordion-item:nth-child(3).item-active .accordion-item-title {
+        position: absolute;
+        left: 9.5em;
+        top: 1.5em;
+        width: 8em;
+        height: 5em;
+    }
+
+    .accordion .accordion-item:nth-child(2).item-active .accordion-item-title {
+        position: absolute;
+        left: 9.5em;
+        top: 2.35em;
+        width: 10em;
+        height: 5em;
+    }
+
+    .accordion .accordion-item:nth-child(2).item-active .accordion-item-title h2 {
+        font-size: 1.25em;
+    }
+}
