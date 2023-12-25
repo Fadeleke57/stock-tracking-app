@@ -1,0 +1,143 @@
+
+.card2 {
+  width: 100%;
+  min-height: 20vh;
+  padding: 6em 2em;
+  background-color: white;
+}
+
+/*
+@media screen and (max-width: 900px) {
+  .card2 {
+    background: radial-gradient(60em 60em at center,#2b5c2b5c, #ffffff 60%);
+  }
+}
+*/
+.card2 h1 {
+  text-align: center;
+  font-size: 4em;
+}
+
+.card2 p {
+  text-align: center;
+  font-size: 2em;
+  color: rgb(47, 47, 47);
+  margin-bottom: 1.5em;
+}
+
+.slider-section {
+  min-height: 40em;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 2em;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: 0px 0px 50px #486850;
+}
+
+.slider-container {
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  width: 100%;
+  height: 39em;
+  overflow: auto;
+  border-radius: 6em;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.slider-container {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  -webkit-overflow-scrolling: touch;
+}
+
+.slider-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.slide {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+  z-index: 0;
+  border-radius: 1em;
+}
+
+.text-card {
+  width: 20em;
+  min-height: 30em;
+  background: linear-gradient(to left top, rgb(167, 167, 167), #486850);
+  border-radius: 3em;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2em;
+  color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.text-card p, .text-card h2, .text-card a {
+  user-select: none;
+  text-align: left;
+}
+
+.text-card p {
+  line-height: 25px;
+  font-size: 1.1em;
+  color: #fffcfc;
+}
+
+.text-card a {
+  position: absolute;
+  bottom: 3em;
+  text-decoration: none;
+  color: #ffffff;
+  border: 2px #ffffff solid;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  padding: 0.7em 1.3em;
+  border-radius: 0.5em;
+  transition: 0.3s;
+}
+
+.text-card a:hover {
+  background-color: #486850;
+  box-shadow: 0px 0px 20px #486850;
+  color: white;
+}
+
+/*Shrink on smaller screens*/
+@media screen and (max-width: 1405px) {
+  .slider-container {
+    width: 133.25%;
+  }
+}
+
+@media screen and (max-width: 1055px) {
+  .slider-container {
+    width: 200%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .slider-container {
+    width: 400%;
+  }
+  .card2 h1 {
+    font-size: 2.6em;
+    text-align: center;
+  }
+  .card2 p {
+    font-size: .9em;
+    margin-bottom: 3em;
+  }
+
+}

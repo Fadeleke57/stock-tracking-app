@@ -1,0 +1,72 @@
+.analysis {
+    font-family: sans-serif;
+    background-color: #fff;
+    padding: 4em 0em;
+    overflow-x: hidden;
+}
+
+.analysis-header {
+    background: radial-gradient(400px 400px at center,#2b5c2b5a, #ffffff 55%);
+    padding: 4em;
+}
+    
+.analysis-title {
+    margin-top: 0.5em;
+    text-align: center;
+    font-size: 3.5em;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px #00000065;
+}
+    
+.analysis-subtitle {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    color: rgb(45, 45, 45);
+    margin-top: 1em;
+}
+
+.search-bar-container {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+    padding-top: 20px;
+
+  }
+
+@media screen and (max-width: 700px) {
+    .analysis-title {
+        font-size: 2em;
+        margin-top: 1em;
+    }
+    .analysis-subtitle {
+        font-size: .9em;
+    }
+    .search-bar-container {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 200px;
+        padding-top: 10px;
+    }
+    .analysis-header {
+        background: none;
+        padding: 4em;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+

@@ -1,0 +1,159 @@
+
+.special-card {
+  position: relative;
+  box-shadow: -1em 0 2em 1em rgba(0, 0, 0, .3);
+}
+
+#card1 {
+  background: radial-gradient(#2b5c2b95, #ffffff 60%);
+}
+
+@media screen and (max-width: 900px) {
+  #card1 {
+    background: radial-gradient(40em 40em at center,#2b5c2b8b, #ffffff 60%);
+  }
+}
+
+.aux-container a, .inner-cards a {
+  text-decoration: none;
+  color: #000;
+}
+  
+.aux-container a:not(.inner-btn-primary):hover, .inner-cards a:not(.inner-btn-primary):hover {
+  color: #6b6b6b;
+}
+
+.inner-btn-primary {
+  background: #000;
+  padding: 0.7em 1.5em;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0 1em;
+}
+
+.aux-container {
+  max-width: 1350px;
+  margin: 0 1em;
+  padding: 0 2.5em;
+
+}
+
+.header {
+  margin-bottom: 0em;
+  margin-top: 0em;
+
+}
+
+.header .aux-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.inner-btn-list-item {
+  display: none;
+}
+
+.header-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: 80vh;
+
+}
+
+.header-body .inner-btn {
+  margin: 1em 0;
+  display: inline-block;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  margin: 0.4em 0;
+  max-width: 600px;
+}
+
+.subtitle {
+  text-align: left;
+}
+
+.header-text p {
+  font-size: 1.1em;
+  line-height: 27px;
+  max-width: 450px;
+  color: #000;
+}
+
+.header-text .inner-btn-primary {
+  margin-right: 1em;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+}
+
+.stats > div {
+  margin: 2em 2em 0 0;
+}
+
+.stats h2 {
+  font-size: 2em;
+}
+
+.stats p {
+  margin: 0;
+  font-size: 0.9em;
+  color: black;
+}
+
+.line {
+  background: #000;
+  margin: 0 1.5em;
+  width: 3px;
+  height: 3em;
+}
+
+#counter {
+  font-size: 1.8em;
+}
+
+.marquee {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4em;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .inner-btn-list-item {
+    display: block;
+  }
+  .header-body,
+  .inner-cards .aux-container {
+    grid-template-columns: 2fr;
+  }
+  .banner {
+    padding: 2em 0 6em 0;
+  }
+  .header {
+    width: 90vw;
+  }
+  .header-text {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 2em;
+    margin: 0 0 0 0;
+  }
+}
