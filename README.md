@@ -31,6 +31,8 @@ Tradingview Widget
 <br>
 Alpha Vantage API
 <br>
-Twelve Data Timeline:
+Twelve Data 
+<br><br>
+Timeline:
 <br>
 Ongoing Project: This project is currently ongoing, with continuous updates and enhancements being made to improve functionality and user experience.
