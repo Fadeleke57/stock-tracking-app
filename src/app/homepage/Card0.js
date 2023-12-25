@@ -2,10 +2,10 @@ import React from 'react';
 import './Card0.css';
 import dynamic from "next/dynamic";
 import Link from 'next/link'
-
 import FadeUp from './FadeUp';
 import Image from 'next/image';
 import img from './img/bonsaiSVG.svg';
+import BonsaiGif from '../../../public/bonsai_gif.gif'
 
 function Card0() {
 
@@ -18,7 +18,7 @@ function Card0() {
 
           <Link href="https://youtu.be/fCdXvp0tTnc" target="blank"><p className='videoText'><small>Restoration of a Chinese Juniper Bonsai</small></p></Link>
           <FadeUp>
-            <video src={require('../../../public/bonsai_video.mp4')} muted autoPlay loop className='video' />
+            <Image src={BonsaiGif} className='video' alt='bonsai video'></Image>
           </FadeUp>
         </div>
 
@@ -51,4 +51,4 @@ function Card0() {
   );
 }
 
-export default dynamic (() => Promise.resolve(Card0), {ssr: false})
+export default Card0;
