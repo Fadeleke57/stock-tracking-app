@@ -59,7 +59,7 @@
     }
     .secondary-menu {
       position: absolute;
-      top: 2.40em;
+      top: 2.45em;
       left: -103%;
       width: 102%;
       height: 100vh;
@@ -71,8 +71,8 @@
 
     /*Dynamic class added 
     later with Javascript*/
-    .secondary-navbar .menu-open {
-      left: 0;
+    .secondary-navbar .secondary-menu-open {
+      left: -1%;
       font-size: 20px;
       gap: 5em;
     }

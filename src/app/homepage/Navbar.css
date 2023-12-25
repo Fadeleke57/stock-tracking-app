@@ -3,8 +3,8 @@
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    width: 100%;
-    padding: .9em;
+    width: 100vw;
+    padding: .9em 2em;
     color: #fff;
     transition: 0.5s ease-in-out;
     z-index: 100;
@@ -68,14 +68,14 @@
     }
     .menu {
       position: absolute;
-      top: 2.55em;
-      left: -100%;
-      width: 100%;
+      top: 2.521em;
+      left: -102%;
+      width: 100vw;
       height: 100vh;
       background: rgba(24, 24, 24, 0.8);
       flex-direction: column;
       justify-content: center;
-      overflow-y: hidden;
+      overflow: hidden;
     }
 
     .navbar-active {
@@ -84,7 +84,7 @@
     /*Dynamic class added 
     later with Javascript*/
     .navbar .menu-open {
-      left: 0;
+      left: -1%;
       font-size: 20px;
       gap: 5em;
       font-weight: 500;

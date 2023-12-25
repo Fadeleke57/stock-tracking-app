@@ -4,7 +4,7 @@ import './SecondaryNavbar'
 
 function Menu({menuOpen}) {
     return (
-      <ul className={`secondary-menu ${menuOpen && 'menu-open'}`}>
+      <ul className={`secondary-menu ${menuOpen && 'secondary-menu-open'}`}>
           <li key={0}>
             <Link href='../'>Home</Link>
           </li>
