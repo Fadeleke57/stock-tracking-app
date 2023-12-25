@@ -24,7 +24,9 @@ Tradingview Widget: Incorporates interactive financial charts and tools for an e
 <br>
 User-Friendly Interface: Designed with NextJS for a responsive, intuitive user interface. Comprehensive Data Visualization: Offers various forms of data representation to cater to different user preferences.
 
-## Technologies NextJS
+## Technologies 
+NextJS
+<br>
 Vercel
 <br>
 Tradingview Widget
@@ -32,7 +34,6 @@ Tradingview Widget
 Alpha Vantage API
 <br>
 Twelve Data 
-<br><br>
-Timeline:
-<br>
+
+### Timeline:
 Ongoing Project: This project is currently ongoing, with continuous updates and enhancements being made to improve functionality and user experience.
