@@ -120,7 +120,7 @@ header {
 
 @media screen and (max-width: 900px) {
   header h1 {
-    font-size: 1.7em;
+    font-size: 1em;
     text-align: left;
   }
 
