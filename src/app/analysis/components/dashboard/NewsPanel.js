@@ -10,7 +10,7 @@ export default function NewsPanel({ stock, item }) {
     if (words.length > 11) {
       return words.slice(0, 11).join(' ') + '...';
     } else {
-      return title; // Return the original title if it has 11 or fewer words
+      return title;
     }
   }
 
