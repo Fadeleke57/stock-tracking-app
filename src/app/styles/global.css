@@ -28,7 +28,6 @@ section {
   display: flex;
   position: relative;
   box-shadow: -1em 0 2em 1em rgba(0, 0, 0, .3);
-  overflow-x: auto;
 }
   
 section .text {

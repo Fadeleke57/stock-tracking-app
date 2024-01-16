@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import dynamic from "next/dynamic";
 import './SecondaryNavbar'
+import styles from './SecondaryNavbar.module.css'
 
 function Menu({menuOpen}) {
     return (
-      <ul className={`secondary-menu ${menuOpen && 'secondary-menu-open'}`}>
+      <ul className={menuOpen ? styles.menuOpen : styles.menu }>
           <li key={0}>
             <Link href='../'>Home</Link>
           </li>

@@ -7,6 +7,7 @@ import FadeUp from './FadeUp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link'
+import './Button.css'
 
 function Header() {
   const coolGreen = "#486850";
@@ -14,7 +15,7 @@ function Header() {
 
     <header>
 
-    <div className="row">
+    <div className="row" style={{maxWidth: '1300px'}}>
       
       <div className="col">
         <FadeUp>
@@ -41,7 +42,6 @@ function Header() {
           <span>W</span>
           <span>T</span>
           <span>H</span>
-          
         </div>
       </FadeUp>
       </div>
@@ -72,7 +72,6 @@ function Header() {
       
     </div>
   </header>
-
   )
 }
 

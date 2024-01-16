@@ -29,10 +29,11 @@ export default function NewsPanel({ stock, item }) {
     const hoursDifference = timeDifference / (1000 * 60 * 60);
 
     if (hoursDifference < 24) {
-      return Math.round(hoursDifference) + ' hours ago';
+      return hoursDifference === 0 ? 'now' : Math.round(hoursDifference) + ' hour' + (hoursDifference === 1 ? '' : 's') + ' ago';
     } else {
       const daysDifference = Math.round(hoursDifference / 24);
-      return daysDifference + ' days ago';
+      const days = daysDifference === 1 ? '1 day ago' : daysDifference + ' days ago'
+      return days
     }
   }
 

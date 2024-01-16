@@ -13,7 +13,7 @@ header {
   flex-direction: column;
   margin: auto;
   justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 
 @media screen and (max-width: 900px) {
@@ -85,6 +85,7 @@ header {
   cursor: pointer;
 }
 
+
 .col h1 span {
   background-color: #ffffff;
   background-image: linear-gradient(45deg, #ffffff, #959595);
@@ -92,6 +93,10 @@ header {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent; 
   -moz-text-fill-color: transparent;
+}
+
+.col h1 {
+  text-align: left;
 }
 
 .header-arrows {
@@ -105,13 +110,35 @@ header {
 @media screen and (max-width: 900px) {
   header h1 {
     font-size: 1.7em;
+    text-align: left;
   }
+
+  .waviy {
+    text-align: left;
+  }
+
   .waviy span {
   font-size: 5em;
   }
+
   .gradient span {
     font-size: 7em;
   }
+
+  .header-subtitle {
+    text-align: left;
+  }
+
+  .row {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: left;
+  }
+
 }
 
 @media screen and (max-width: 500px) {

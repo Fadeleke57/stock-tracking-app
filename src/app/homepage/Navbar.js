@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Menu from './Menu';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBarsStaggered, faTimes } from '@fortawesome/free-solid-svg-icons';
-import './Navbar.css';
+import styles from './Navbar.module.css'
 import Link from 'next/link';
 import dynamic from "next/dynamic";
 
@@ -29,13 +29,13 @@ function Navbar() {
   }
 
   return (
-    <div className={`navbar ${nav && 'navbar-active'}`}>
-      <div className="container">
-        <Link href="/homepage" className="brand">
+    <div className={nav ? styles.navbar : styles.navbarActive}>
+      <div className={styles.container}>
+        <Link href="/homepage" className={styles.brand}>
           Bonsai Finance
         </Link>
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-        <div className="menu-btn">
+        <div className={styles.menuBtn}>
           <FontAwesomeIcon icon={menuOpen ? faTimes: faBarsStaggered} onClick={menuToggle} />
         </div>
         

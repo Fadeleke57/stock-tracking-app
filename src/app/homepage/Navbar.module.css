@@ -1,0 +1,119 @@
+.navbar {
+    background: rgba(106, 129, 111, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 100%;
+    padding: .9em 2em;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    z-index: 100;
+    position: fixed;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar a, .navbarActive a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .navbar a:hover, .navbarActive a:hover {
+    color: #b2b2b2;
+  }
+  
+  .brand {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2em;
+    transition: 0.4s ease-in-out;
+  }
+
+  .menuOpen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2em;
+    transition: 0.4s ease-in-out;
+  }
+  
+  .menuBtn {
+    cursor: pointer;
+    font-size: 1.3em;
+    display: none;
+    transition: 0.3s;
+  }
+  
+  .menuBtn:hover {
+    color: #ffffff;
+  }
+  
+  .navbarActive {
+    background: rgba(106, 129, 111, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 100%;
+    padding: .3em;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    z-index: 100;
+    position: fixed;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .menuBtn {
+      display: block; 
+    }
+    .menu, .menuOpen {
+      position: absolute;
+      top: 2.9em;
+      left: -100%;
+      width: 100%;
+      height: 100vh;
+      background: rgb(24, 24, 24);
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .navbarActive {
+      padding: .9em;
+    }
+    /*Dynamic class added 
+    later with Javascript*/
+    .menuOpen {
+      left: 0%;
+      font-size: 20px;
+      gap: 5em;
+      font-weight: 500;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

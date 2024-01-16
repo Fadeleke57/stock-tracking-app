@@ -1,6 +1,7 @@
 import Button from './Button';
 import Link from 'next/link';
 import dynamic from "next/dynamic";
+import styles from './Navbar.module.css'
 
 function Menu({ menuOpen, setMenuOpen }) {
   function handleClick() {
@@ -15,7 +16,7 @@ function Menu({ menuOpen, setMenuOpen }) {
   ];
 
   return (
-    <ul className={`menu ${menuOpen && 'menu-open'}`}>
+    <ul className={menuOpen ? styles.menuOpen : styles.menu}>
       {linkNames.map((linkName, index) => (
 
         <li key={index}>

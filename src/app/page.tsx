@@ -1,5 +1,6 @@
 import './styles/global.css';
 import Navbar from './homepage/Navbar';
+import SecondaryNavbar from './news/components/SecondaryNavbar';
 import Header from './homepage/Header';
 import Card0 from './homepage/Card0';
 import Card1 from './homepage/Card1';
@@ -12,7 +13,7 @@ import dynamic from "next/dynamic";
   return (
     <>
     <div>
-      <Navbar/>
+      <SecondaryNavbar/>
       <Header/>
       <main>
       <Card0/>

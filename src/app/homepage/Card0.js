@@ -1,5 +1,6 @@
 import React from 'react';
 import './Card0.css';
+import './Button.css'
 import dynamic from "next/dynamic";
 import Link from 'next/link'
 import FadeUp from './FadeUp';
