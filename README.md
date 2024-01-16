@@ -3,7 +3,7 @@ Website: https://stock-tracking-app.vercel.app/
 
 ## Description: 
 
-Bosnai Finance Investment Research is a comprehensive platform designed to provide real-time stock information, sentiment analysis, and historical data analysis. It caters to users with diverse financial and investment backgrounds. The platform serves as a frontend to a larger project, which includes advanced features like stock price prediction using LSTM (Long Short-Term Memory) networks and data scraping capabilities, detailed in the "predicting_stock_prices_with_lstm" repository. 
+Bosnai Finance Investment Research is a comprehensive platform designed to provide real-time stock information, sentiment analysis, and historical data analysis. It caters to users with diverse financial and investment backgrounds. The platform serves as a frontend to a larger project, which includes advanced features like stock price prediction using LSTM (Long Short-Term Memory) networks and data scraping capabilities, detailed in the "predicting_stock_prices_with_lstm" repository. *Development for the front-end is still in the works*
 
 ## Includes..
 
