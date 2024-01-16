@@ -8,7 +8,7 @@ export default function NewsPanel({ stock, item }) {
     const words = title.split(' ');
     // If there are more than 11 words, slice the array to keep only the first 11 words
     if (words.length > 11) {
-      return words.slice(0, 11).join(' ') + '...'; // Add an ellipsis to indicate truncation
+      return words.slice(0, 11).join(' ') + '...';
     } else {
       return title; // Return the original title if it has 11 or fewer words
     }
@@ -16,7 +16,7 @@ export default function NewsPanel({ stock, item }) {
 
   function calculateTimeDifference(timestamp) {
     const year = parseInt(timestamp.slice(0, 4));
-    const month = parseInt(timestamp.slice(4, 6)) - 1; // Months are 0-indexed
+    const month = parseInt(timestamp.slice(4, 6)) - 1; 
     const day = parseInt(timestamp.slice(6, 8));
     const hour = parseInt(timestamp.slice(9, 11));
     const minute = parseInt(timestamp.slice(11, 13));
