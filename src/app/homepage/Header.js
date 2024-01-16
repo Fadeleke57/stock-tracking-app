@@ -20,22 +20,14 @@ function Header() {
       <div className="col">
         <FadeUp>
         <div className="waviy">
-          <span>C</span>
-          <span>U</span>
-          <span>L</span>
-          <span>T</span>
-          <span>I</span>
-          <span>V</span>
-          <span>A</span>
-          <span>T</span>
-          <span>E</span>
+          <h1>CULTIVATE </h1>
         </div>
       </FadeUp>
       </div>
 
       <div className="col" style={{marginTop: -40 + 'px'}}>
       <FadeUp>
-        <div className="gradient">
+        <div className="gradient" style={{marginLeft: '-6px'}}>
           <span>G</span>
           <span>R</span>
           <span>O</span>
