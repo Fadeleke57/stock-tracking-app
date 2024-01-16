@@ -41,7 +41,7 @@ function Header() {
       
       <div className="col" style={{ maxWidth: 500 + 'px' }}>
       <FadeUp>
-        <h1 className='header-subtitle'><span>Balance</span> and <span>patience</span> are key to any investment.</h1>
+        <h1 className='header-subtitle'>Balance and patience are key to any investment.</h1>
       </FadeUp>  
       </div>
       
