@@ -6,7 +6,7 @@ deliver current stock data, sentiment insights, and historical analysis. Availab
 Features:<br> <br>
 -Real-time stock information <br>
 -Financial news and insights <br>
--Interactive stock charts (via TradingView Widgets)<br>
+-Interactive stock charts (TradingView Widgets)<br>
 -Data analytics powered by AlphaVantage API and TwelveData API <br>
 
 Tech Stack: <br> <br>
@@ -17,10 +17,10 @@ Tech Stack: <br> <br>
 -Vercel for deployment <br>
 -Framer Motion and React-Intersection-Observer for animations 
 
-## Getting Started
+## To use
 
 ### Prerequisites
-Ensure that Node.js and npm are installed in your environment.
+Make sure that Node.js and npm are installed in your environment.
 
 ### Installation
 
