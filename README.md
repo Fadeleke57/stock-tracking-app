@@ -1,15 +1,7 @@
-# Bonsai Finance
-Description:
-A real-time stock analysis platform utilizing the AlphaVantage API, TwelveData API, and TradingView Widgets to 
+real-time stock analysis platform utilizing the AlphaVantage API, TwelveData API, and TradingView Widgets to 
 deliver current stock data, sentiment insights, and historical analysis. Available @ https://stock-tracking-app.vercel.app/
 
-Features:<br> <br>
--Real-time stock information <br>
--Financial news and insights <br>
--Interactive stock charts (TradingView Widgets)<br>
--Data analytics powered by AlphaVantage API and TwelveData API <br>
-
-Tech Stack: <br> <br>
+WHat I used: <br> <br>
 -Next.js for the frontend <br>
 -TradingView Widgets for interactive stock charts <br>
 -AlphaVantage API for financial data <br>
@@ -19,7 +11,6 @@ Tech Stack: <br> <br>
 
 ## To use
 
-### Prerequisites
 Make sure that Node.js and npm are installed in your environment.
 
 ### Installation
