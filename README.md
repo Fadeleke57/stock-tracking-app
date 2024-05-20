@@ -1,5 +1,5 @@
 real-time stock analysis platform utilizing the AlphaVantage API, TwelveData API, and TradingView Widgets to 
-deliver current stock data, sentiment insights, and historical analysis. Available @ https://stock-tracking-app.vercel.app/
+deliver current stock data, sentiment insights, and historical analysis. Available @ https://stocktrackingapp.vercel.app/
 
 WHat I used: <br> <br>
 -Next.js for the frontend <br>
